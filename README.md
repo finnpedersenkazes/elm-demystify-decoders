@@ -13,10 +13,10 @@ Status:
 - [X] exercise 3
 - [X] exercise 4
 - [ ] exercise 5
-- [ ] exercise 6
-- [ ] exercise 7
-- [ ] exercise 8
-- [ ] exercise 9
+- [X] exercise 6
+- [X] exercise 7
+- [X] exercise 8
+- [X] exercise 9
 - [ ] exercise 10
 - [ ] exercise 11
 - [ ] exercise 12
