@@ -18,7 +18,7 @@ Status:
 - [X] exercise 8
 - [X] exercise 9
 - [ ] exercise 10
-- [ ] exercise 11
+- [X] exercise 11
 - [ ] exercise 12
 
 

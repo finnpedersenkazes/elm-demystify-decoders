@@ -31,10 +31,17 @@ type Color
 decoder : String -> Decoder Color
 decoder colorString =
     case colorString of
-        "green" -> succeed Green
-        "blue" -> succeed Blue
-        "red" -> succeed Red
-        _ -> fail <| "I don't know a color named " ++ colorString
+        "green" ->
+            succeed Green
+
+        "blue" ->
+            succeed Blue
+
+        "red" ->
+            succeed Red
+
+        _ ->
+            fail <| "I don't know a color named " ++ colorString
 
 
 

@@ -1,6 +1,6 @@
 module Exercise06 exposing (Person, decoder)
 
-import Json.Decode exposing (Decoder, fail, int, string, map2, field )
+import Json.Decode exposing (Decoder, fail, field, int, map2, string)
 
 
 
@@ -50,11 +50,12 @@ type alias Person =
 
 
 decodeName : Decoder String
-decodeName = 
+decodeName =
     field "name" string
 
+
 decodeAge : Decoder Int
-decodeAge = 
+decodeAge =
     field "age" int
 
 

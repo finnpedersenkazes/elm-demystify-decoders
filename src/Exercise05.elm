@@ -1,6 +1,6 @@
 module Exercise05 exposing (decoder)
 
-import Json.Decode exposing (Decoder, fail, int, string, field, map, map2 , decodeString)
+import Json.Decode exposing (Decoder, andThen, decodeString, fail, field, int, map, map2, string, succeed)
 
 
 
@@ -26,29 +26,20 @@ import Json.Decode exposing (Decoder, fail, int, string, field, map, map2 , deco
    need field `term`; then by all means, decode that field first!
 -}
 
+
 decoderRepeat : Decoder Int
-decoderRepeat = 
-     field "repeat" int
+decoderRepeat =
+    field "repeat" int
+
 
 decoderTerm : Decoder String
-decoderTerm = 
-     field "term" string
+decoderTerm =
+    field "term" string
 
-concatRepeat : String -> Int -> String
-concatRepeat str count = 
-     if count <= 0 then
-          ""
-     else
-          String.concat [str, (concatRepeat str (count - 1)) ] 
 
 decoder : Decoder String
 decoder =
-     let 
-          counter = decoderRepeat
-          term = decodeString decoderTerm
-     in   
-     map concatRepeat (decodeString term) counter
-          
+    String.repeat decoderRepeat decoderTerm
 
 
 

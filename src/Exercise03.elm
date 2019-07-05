@@ -1,6 +1,6 @@
 module Exercise03 exposing (decoder)
 
-import Json.Decode exposing (Decoder, list, string, map)
+import Json.Decode exposing (Decoder, list, map, string)
 
 
 

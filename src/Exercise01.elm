@@ -17,7 +17,7 @@ import Json.Decode as Decode exposing (Decoder, int)
    module.
 
    So, have a little look at [the documentation][1] - just a quick check of what
-   the *primitives* section looks like and their types, and try to adjust the   
+   the *primitives* section looks like and their types, and try to adjust the
    following decoder so it can decode a JSON value that looks like `5`.
 
    [1]: http://package.elm-lang.org/packages/elm-lang/core/latest/Json-Decode
