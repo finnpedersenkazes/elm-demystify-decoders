@@ -1,10 +1,10 @@
 # Spoiler alert
 
-I am working on solving the exercises in this reprository. 
+I am working on solving the exercises in this reprository.
 
-Making decoders is a bit tricky to begin with, but very important when talking to APIs. 
+Making decoders is a bit tricky to begin with, but very important when talking to APIs.
 
-**Spoiler alert**: You will find solutions to the exercises here. 
+**Spoiler alert**: You will find solutions to the exercises here.
 
 Status:
 
@@ -12,12 +12,12 @@ Status:
 - [X] exercise 2
 - [X] exercise 3
 - [X] exercise 4
-- [ ] exercise 5
+- [X] exercise 5
 - [X] exercise 6
 - [X] exercise 7
 - [X] exercise 8
 - [X] exercise 9
-- [ ] exercise 10
+- [X] exercise 10
 - [X] exercise 11
 - [ ] exercise 12
 

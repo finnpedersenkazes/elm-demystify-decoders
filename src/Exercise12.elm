@@ -1,6 +1,6 @@
 module Exercise12 exposing (Tree(..), decoder)
 
-import Json.Decode exposing (Decoder, fail)
+import Json.Decode exposing (Decoder, fail, map2, oneOf)
 
 
 
@@ -41,9 +41,22 @@ type
     | Leaf String Int
 
 
+decoderBranch : Decoder Branch String (List Tree)
+decoderBranch =
+    map2 Branch string (list decoder)
+
+
+decoderLeaf : Leaf String Int
+decoderLeaf =
+    map2 Leaf string int
+
+
 decoder : Decoder Tree
 decoder =
-    fail "I'm not a tree."
+    oneOf
+        [ decoderBranch
+        , decoderLeaf
+        ]
 
 
 
