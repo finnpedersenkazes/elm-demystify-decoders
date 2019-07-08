@@ -1,4 +1,12 @@
-# Spoiler alert
+# Article
+
+## Demystifying Elm JSON Decoders
+https://blog.ilias.xyz/demystifying-decoders-d294ed35bc6e
+
+## Clone of
+https://github.com/zwilias/elm-demystify-decoders
+
+## Spoiler alert
 
 I am working on solving the exercises in this reprository.
 
@@ -19,7 +27,7 @@ Status:
 - [X] exercise 9
 - [X] exercise 10
 - [X] exercise 11
-- [ ] exercise 12
+- [X] exercise 12
 
 
 
